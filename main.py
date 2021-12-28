@@ -17,7 +17,7 @@ Made by Dom Is Offline#0001
 
 names = []
 available = []
-with open("usernames.txt", "r") as f:
+with open("usernames.txt", "r", encoding="utf8") as f:
     for line in f:
         names.append(line.strip())
         
@@ -52,7 +52,7 @@ for i in names:
         except:
             print(f"\u001b[32m{i} is available\u001b[0m")
             available.append(i)
-with open('available.txt', 'w+') as f:
+with open('available.txt', 'w+', encoding="utf8") as f:
     for i in available:
         f.write(i+'\n')
         # this block of code(finally) can be removed if you dont need server response
