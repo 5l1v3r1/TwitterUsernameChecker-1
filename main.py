@@ -55,4 +55,3 @@ for i in names:
 with open('available.txt', 'w+', encoding="utf8") as f:
     for i in available:
         f.write(i+'\n')
-        # this block of code(finally) can be removed if you dont need server response
